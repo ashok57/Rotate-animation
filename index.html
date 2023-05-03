@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotate Animations</title>
+    <link rel = "stylesheet" type="text/css"  href="stylsheet.css">
+</head>
+<body>
+
+    <img class ="rotate_01" src = "https://www.iconpacks.net/icons/2/free-settings-icon-3110-thumb.png">
+    <img class ="rotate_02" src = "https://www.iconpacks.net/icons/2/free-settings-icon-3110-thumb.png">
+    <img class ="rotate_03" src = "https://www.iconpacks.net/icons/2/free-settings-icon-3110-thumb.png">
+    <style>
+
+        /*body backgound CSS */
+        body{
+            padding: 0;
+            margin: 0;
+            background: #8AF3F9;
+            background-size: cover;
+    
+    
+        }
+        /* rotate image-01 CSS*/
+        .rotate_01{
+            display: block;
+            position: fixed;
+            top : 50%;
+            left : 50%;
+            width : 150px;
+            height : 150px;
+            margin: -60px 0 0 -280px;
+            -webkit-transition:  -webkit-transform 1s;
+         }
+
+         .rotate_01:hover{
+            -webkit-transform: rotate(360deg) translateZ(0) ;
+         }
+
+         /* rotate image-02 CSS*/
+        .rotate_02{
+            display: block;
+            position: fixed;
+            top : 50%;
+            left : 50%;
+            width : 150px;
+            height : 150px;
+            margin: -60px 0 0 -60px;
+            -webkit-transition:  -webkit-transform 1s;
+         }
+
+         .rotate_02:hover{
+            -webkit-animation: spin 1s linear infinite ;
+            -moz-animation: spin 1s linear infinite;
+            animation: spin 1s linear infinite;
+         }
+           /* rotate image-03 CSS*/
+        .rotate_03{
+            display: block;
+            position: fixed;
+            top : 50%;
+            left : 50%;
+            width : 150px;
+            height : 150px;
+            margin: -60px 0 0 150px;
+            -webkit-animation: spin 1s linear infinite ;
+            -moz-animation: spin 1s linear infinite;
+            animation: spin 1s linear infinite;
+         }
+
+         
+
+         /*use key frames*/
+         @-webkit-keyframes spin{
+            100%{-webkit-transform:rotate(360deg) ;}
+         }
+         @-webkit-keyframes spin{
+            100%{-webkit-transform:rotate(360deg) ;}
+         }
+         @keyframes spin{
+            100%{-webkit-transform:rotate(360deg) ;}
+         }
+         
+
+
+       
+
+
+    </style>
+    
+</body>
+</html>
